@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Bitter');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    color: #232323;
+    text-align: center;
+    line-height: 150%;
+}
+
+.fa-chevron-down {
+    color: #9c1f4d;
+    padding-top: 40px;
+    margin-bottom: 10px;
+}
+
+.fa-github, .fa-linkedin, .fa-envelope {
+    margin: auto 20px 1em 20px;
+    color: #7a7a7a
+}
+
+.div-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    text-align: left;
+    justify-content: left;
+}
+
+h1 {
+    font-family: 'Bitter', serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 200px 100px 20px;
+    text-align: left;
+    line-height: 150%;
+}
+
+.content_body {
+    margin: auto 100px;
+    text-align: justify;
+}
+
+.h1-fuschia {
+    color: #9c1f4d;
+}
+.nav_content {
+    font-size: 25px;
+    color: #7a7a7a;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.nav_content--top {
+     margin-top: 200px;
+     margin-bottom: auto;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.left-nav {
+    background-color: #444;
+    flex: 1;
+    padding: 1em;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+}
+
+.right-content {
+    background-color: #7a7a7a;
+    flex: 4;
+    padding: 1em;
+}
