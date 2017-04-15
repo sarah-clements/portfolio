@@ -1,35 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sarah Clements</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://use.fontawesome.com/464b1a7c80.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sarah Clements</title>
+	<link href="style.css" rel="stylesheet" >
+	<script src="https://use.fontawesome.com/464b1a7c80.js"></script>
 </head>
- 	<body>
-	 <section class="container">
-		    <div class="div-column left-nav">
-		    	<div class="nav_content--top">
-			    	<p class="nav_content">ABOUT</p>
-			    	<p class="nav_content">PORTFOLIO</p>
-			    	<p><a class="nav_content" href="https://www.linkedin.com/in/saclements1/">RESUME</a></p>
-			    </div>
+	<body>
+	    <nav class="navigation" role="navigation">
+      		<ul>
+      			<li><a class="nav_header lt-gray">Sarah Clements</a></li>
+		    	<li><a href="#about" class="nav_content lt-gray about">ABOUT</a></li>
+		    	<li><a href="#portfolio" class="nav_content lt-gray portfolio">PORTFOLIO</a></li>
+		    	<li><a href="https://github.com/sarah-clements"><i class="fa fa-github fa-lg lt-gray" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/saclements1/"><i class="fa fa-linkedin fa-lg lt-gray" aria-hidden="true"></i></a></li>
+				<li><a href=""><i class="fa fa-envelope fa-lg lt-gray" aria-hidden="true"></i></a></li>
+			</ul>
+ 		</nav>
+
+		<div class="wrapper">
+			<div>
+				<img src="./img/andrew-collins-cropped-lg.jpg">
 			</div>
-		    <div class="div-column right-content">
-		    	<h1><span class="h1-fuschia">Hi, I'm Sarah.</span> I'm a Full-Stack Developer passionate about leveraging technology for social impact.</h1>
-		    	<p class="content_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
-		    </div>
-	    </section>
-	    <footer class="container">
-	    	<div class="footer-column left-nav">
+	 		<main class="main-content">
+	 			<div id="about">
+			    	<h1><span class="fuschia">Hi, I'm Sarah.</span> I'm a Full-Stack Developer passionate about leveraging technology for social impact.</h1>
+			    	<p class="content_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
+			    	<br>
+			    	<br>
+			    	<br>
+			    	<div class="padding">
+		    			<i class="fa fa-chevron-down fa-2x fuschia" aria-hidden="true"></i>
+		    		</div>
+		    	</div>
+		    	<div id="portfolio" class="padding-top">
+			    	<h1><span class="turquoise">We Vote</span> is an open-source nonprofit with a mission to increase voter turnout. As an Engineering Intern, I worked across the stack to build features.</h1>
+<!-- 			    	<p class="content_body">As Engineering Intern, I spent over three months working across the stack (React/Python/Django/Postgres) building several features.</p>
+ -->			    	<br>
+			    	<br>
+			    	<br>
+			    	<h2>Donation Interface with Stripe Integration</h2>
+						
+			    </div>
+			    </main>
+	    </div>
+<!-- 	    <footer>
+	    	<div>
 			    <i class="fa fa-github fa-lg" aria-hidden="true"></i>
 			    <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
 			    <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
 	    	</div>
-	    	<div class="footer-column right-content">
-	    		<i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
-	    	</div>
-	    </footer>
-	</body>
+	 	</footer>
+ -->	</body>
 </html>
