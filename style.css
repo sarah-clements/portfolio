@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Abel|Bitter');
 
-/** {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-}
-*/
 body {
     font-family: "Helvetica", sans-serif;
     background-color: #FFF;
@@ -14,39 +7,61 @@ body {
     font-size: 14px;
     font-weight: 400;
     color: #606060;
-    text-align: center;
+    text-align: left;
     line-height: 150%;
-}
-/* Move the nav styles into media query and create hamburger menu for mobile*/
-.navigation {
-    list-style: none;
-    margin: 0; 
-    position: fixed;
-    top: 0;
-    z-index: 2;
-    width: 100%;
-    background-color: #FFF;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    -webkit-flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1em;
 }
 
-.navigation a {
+p {
+    text-align: left;
+}
+
+img {
+    max-width: 100%;
+}
+
+#div-invis {
+    display: none;
+}
+
+a {
     text-decoration: none;
-    padding: 1em;
+    color: #606060;
 }
 
-ul {
+.navigation li, .navigation-mobile li, .navigation-menu li {
+    list-style: none;
+}
+
+.navigation, .navigation-menu {
+    display: none;
+}
+
+.navigation ul, .navigation-mobile ul {
     list-style: none;
     padding-left: 0;
+}   
+
+.navigation li, .navigation-mobile li {
+    display: inline-block;
+}
+  
+.navigation-menu li {
+    display: block;
+    text-align: right;
 }
 
-li {
-    display: inline-block;
+.fa-bars {
+    position: absolute;
+    right: 1em;
+}
+
+.nav-header-mobile {
+    position: absolute;
+    left: 1em;
+    margin-top: 0px;
 }
 
 .nav_header {
@@ -71,25 +86,27 @@ li {
   display: flex;  
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
-  text-align: center;
   position: relative;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
   top: 50px;
   margin: 0 auto;
 }
 
-/*.wrapper > * {
-  padding: 1em;
-  flex: 1 100%;
+.row {
+    width: 100%;
+    display: flex;
 }
-*/
-.main-content {
-    padding: 1em;
+
+.alt-background {
+    background-color: #EDEBEB;
 }
 
 .footer-icons {
     margin-top: 40px;
+}
+
+h3:hover {
+    color: #00a4d3;
 }
 
 h1 {
@@ -105,8 +122,15 @@ h2 {
     text-align: left;
     font-size: 24px;
 }
-.content_body {
-    text-align: justify;
+
+h3 {
+    font-family: 'Abel', sans-serif;
+    text-align: left;
+    font-size: 20px;
+}
+
+li {
+    text-align: left;
 }
 
 .fuschia {
@@ -121,6 +145,10 @@ h2 {
     color: #7A7A7A;
 }
 
+.green {
+    color: #6BD184;
+}
+
 .about:hover {
     color: #e93578;
 }
@@ -129,8 +157,33 @@ h2 {
     color: #00a4d3;
 }
 
+.contact:hover {
+    color:#6BD184;
+}
+
 @media (min-width: 768px) {
-    #about, #portfolio {
+    .fa-bars {
+        display: none;
+    }
+
+    .navigation {
+        list-style: none;
+        margin: 0; 
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+        background-color: #FFF;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        -webkit-flex-flow: row wrap;
+    }
+
+    .wide-margin, #about, #portfolio, #contact {
         margin: 50px 300px;
     }
 
@@ -138,32 +191,29 @@ h2 {
         font-size: 18px;
     }
 
+    .navigation a {
+        padding: 1em;
+    }
+
+    .navigation li:last-child {
+        position: absolute;
+        right: 10px;
+        top: 16px;
+    }
+
+    .navigation li:nth-child(5) {
+        position: absolute;
+        right: 50px;
+        top: 16px;
+        padding: 0 16px;
+    }
     h1 {
        font-size: 2em;
     }
 
     body {
         font-size: 16px;
-    }
-
-    li:last-child {
-        position: absolute;
-        right: 10px;
-        top: 16px;
-    }
-
-    li:nth-child(5) {
-        position: absolute;
-        right: 50px;
-        top: 16px;
-        padding: 0 16px;
-    }
-
-    li:nth-child(4) {
-        position: absolute;
-        right: 85px;
-        top: 16px;
-        padding: 0 32px;
+        padding: 0;
     }
 
     .spacing {
@@ -174,5 +224,12 @@ h2 {
         padding-top: 100px;
     }
 
+    .col-70 {
+        width: 70%;
+    }
+
+    .col-30 {
+        width: 30%;
+    }
 }
 
