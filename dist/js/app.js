@@ -1,8 +1,6 @@
 $(function () {
-    $('h3 > span').on('click', function () {
-    	// let target = $(event.target);
-     //    target.next().fadeToggle('slow');
-        $('h3').next().fadeToggle('slow');
+    $('.contrib').on('click', function (event) {
+        $(event.target).parents().next().fadeToggle('slow');
     });
 
     $('.down-nav-arrow').on('click', function () {
