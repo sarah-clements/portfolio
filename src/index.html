@@ -5,9 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sarah Clements</title>
 	<link href="style.css" rel="stylesheet" >
-	<script src="https://use.fontawesome.com/464b1a7c80.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  	<script src="./js/app.js"></script>
 </head>
 	<body>
 	<!-- mobile nav -->
@@ -28,7 +25,7 @@
 	    <nav class="navigation" role="navigation">
       		<ul>
       			<li><a class="nav_header lt-gray">Sarah Clements</a></li>
-		    	<li><a href="#about" class="nav_content lt-gray about">ABOUT</a></li>
+		    	<li><a href="#about-buffer" class="nav_content lt-gray about">ABOUT</a></li>
 		    	<li><a href="#portfolio-buffer" class="nav_content lt-gray portfolio">PORTFOLIO</a></li>
 		    	<li><a href="#contact" class="nav_content lt-gray contact">CONTACT</a></li>
 				<li><a href="https://www.linkedin.com/in/saclements1/"><i class="fa fa-linkedin fa-lg lt-gray" aria-hidden="true"></i></a></li>
@@ -45,10 +42,10 @@
 					<img srcset="./img/andrew-collins-cropped-lg.jpg" alt="foggy san francisco">
 				</picture>
 				</div>
+				<div class="row padding-top" id="about-buffer"></div>
 	 			<section id="about">
 			    	<h1><span class="fuschia">Hi, I'm Sarah.</span> I'm a Full-Stack Developer passionate about leveraging technology to solve real world problems.</h1>
 			    	<p>With a background in design and experience working for a non-profit organization, I'm seeking opportunities to put my varied skillset to good use. I've spent the past year learning web development with Udacity, volunteering with Code for San Francisco open source projects and working on the web app for the nonprofit startup We Vote. When I’m not thinking about code, I enjoy drawing, hiking or reading.</p>
-			    	<br>
 			    	<div class="padding-top mobile-hide">
 		    			<i class="fa fa-chevron-down fa-2x fuschia down-nav-arrow" aria-hidden="true"></i>
 		    		</div>
@@ -82,6 +79,7 @@
 						<li>Created a Django controller and model dict for error handling that generates dynamic messages based on internal server errors, stripe errors or specific credit card errors (incorrect pin, invalid card number, etc); this message is returned to the user in React if the donation fails.</li>
 						<li>Created a Readme for first-time contributors wanting to work on this feature</li>
 					</ul>
+					<br>
 				</section>
 		    </div>
 	    	<div class="wrapper alt-background">
@@ -104,6 +102,7 @@
 			    		<li>Created the API call and event listeners in React for retrieving the ballot guide list (previously saved to our database based on a unique user ID).</li>
 			    		<li>Created the view and controller functions for the API in our server (to retrieve the ballot guide list).</li>
 					</ul>
+					<br>
 				</section>
 		    </div>
 		    <div class="wrapper">
@@ -131,6 +130,7 @@
 						<li>Integrated the react-slick carousel slider and GSAP (vanilla Javascript) with React for use in the final slide.</li>
 						<li>Created a call-to-action page to direct people to their first ballot at the end of the tour.</li>
 					</ul>
+					<br>
 				</section>
 		    </div>
 <!-- 		    <div class="wrapper alt-background">
@@ -164,6 +164,7 @@
 			    	<br>
 			    	<br>
 			    	<p>As part of my final Udacity Front End Web Development program, I created a single-page app of a local neighborhood. I integrated the google maps and Foursquare API’s and used the KnockoutJS framework to filter map markers and the list view. Check it out <strong><a href="https://sarah-clements.github.io/Neighborhood-Map/dist/index.html">here</a></strong> or <strong><a href="https://github.com/sarah-clements/Neighborhood-Map">view the code.</a></strong></p>
+			    	<br>
 				</section>
 		    </div>
 		    <div class="wrapper">
@@ -198,4 +199,7 @@
 	    	</div>
 	 	</footer>
 	</body>
+<script src="https://use.fontawesome.com/464b1a7c80.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="./js/app.js"></script>
 </html>

@@ -260,7 +260,7 @@ button {
     }
 
     .wide-margin, #about, #portfolio, #contact {
-        margin: 25px 100px;
+        margin: 0px 100px;
     }
 
     .nav_content, .nav_header {
@@ -315,7 +315,7 @@ button {
 
 @media (min-width: 769px) {
     .wide-margin, #about, #portfolio, #contact {
-        margin: 25px 200px;
+        margin: 0px 200px;
     }
     h1 {
        font-size: 24px;
@@ -325,10 +325,6 @@ button {
         font-size: 22px;
     }
 
-    .padding-top {
-        padding-top: 40px;
-    }
-
     .mobile-hide {
         display: block;
     }
@@ -336,7 +332,7 @@ button {
 
 @media (min-width: 1200px) {
     .wide-margin, #about, #portfolio, #contact {
-        margin: 25px 300px;
+        margin: 0px 300px;
     }
 
     h1 {
@@ -345,6 +341,9 @@ button {
 
     h2 {
         font-size: 24px;
+    }
+     .padding-top {
+        padding-top: 40px;
     }
 }
 
