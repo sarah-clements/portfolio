@@ -22,10 +22,6 @@ img {
     max-width: 100%;
 }
 
-.div-invis {
-    display: none;
-}
-
 a {
     text-decoration: none;
     color: #606060;
@@ -133,10 +129,6 @@ a {
 
 .footer-icons {
     margin-top: 40px;
-}
-
-h3:hover {
-    color: #00a4d3;
 }
 
 h1 {
