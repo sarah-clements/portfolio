@@ -181,6 +181,10 @@ li {
     color:#6BD184;
 }
 
+.turquoise-hover:hover {
+    color: #00a4d3;
+}
+
 .padding-top {
     padding-top: 20px;
 }
