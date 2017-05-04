@@ -3,7 +3,7 @@
 body {
     font-family: "Helvetica", sans-serif;
     background-color: #FFF;
-    margin: 0;
+    margin: 0 auto;
     font-size: 12px;
     font-weight: 400;
     color: #606060;
@@ -18,8 +18,9 @@ p {
     text-align: left;
 }
 
-img {
+img, picture {
     max-width: 100%;
+    margin: 0 auto;
 }
 
 a {
@@ -345,7 +346,7 @@ button {
 
 @media (min-width: 1700px) {
     .wide-margin, #about, #portfolio, #contact {
-        margin: 25px 450px;
+        margin: 45px 20%;
     }
 
 }
